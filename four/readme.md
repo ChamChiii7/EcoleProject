@@ -7,11 +7,13 @@ pm2 restart 0 --watch <br>
 npm run <br>
 
 ## Login 페이지 메인화면
-![Login](https://github.com/ChamChiii7/EcoleProject/assets/126247047/29ee1156-9491-48a3-b82f-2b2014ace887)
+![Login_main](https://github.com/ChamChiii7/EcoleProject/assets/126247047/3858356c-88f6-4828-8365-b63de7faee99)
 
-## 사용자에게 email,password 입력 받아서 계정 생성
-![create](https://github.com/ChamChiii7/EcoleProject/assets/126247047/efc2fefb-aa2b-463e-8221-86b05c967a28)
+## 사용자에게 email,password,name 입력 받아서 계정 생성
+![create](https://github.com/ChamChiii7/EcoleProject/assets/126247047/1eb50230-ba4b-40d8-93f0-60806175c3ed)
 
+## 사용자에게 email,password 입력 받아서 로그인
+![login](https://github.com/ChamChiii7/EcoleProject/assets/126247047/7ea94873-3a18-40d0-835e-da6f9bfad28c)
 
 ## react 렌더링이 안되고 있는 관계로 register 화면은 현재는 구현 X
 현재 화면의 Logout 버튼 삭제 후 이미 로그인을 한 유저들의 화면에만 Logout 구현. <br>
