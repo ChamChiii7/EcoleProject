@@ -1,12 +1,10 @@
 ## AppWrite를 이용한 Login 페이지 구현
 
-pm2 kill 후
-pm2 status로 확인
-
- pm2 serve build --name login --port 2308 --spa
-pm2 restart 0 --watch
--> 아직 빌드 안된 상태
-npm run 
+pm2 kill 후 pm2 status로 확인 <br>
+pm2 serve build --name login --port 2308 --spa <br>
+pm2 restart 0 --watch <br>
+-> 아직 빌드 안된 상태 <br>
+npm run <br>
 
 ## Login 페이지 메인화면
 ![Login](https://github.com/ChamChiii7/EcoleProject/assets/126247047/29ee1156-9491-48a3-b82f-2b2014ace887)
