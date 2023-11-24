@@ -1,0 +1,454 @@
+﻿<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<title>jQuery Mobile</title>
+	<link rel="stylesheet" href="./css/jquery.mobile-1.4.5.min.css"/>
+	<script src="./js/jquery-1.11.1.min.js"></script>
+	<script src="./js/jquery.mobile-1.4.5.min.js"></script>
+<style>
+   li { list-style:none; }
+  .picture { list-style:none; padding:0; margin:0; }
+  .picture li { float:left; width:50%;}
+  .picture li a {display:block; margin:5px; border: 1px }
+  .picture li img { display:block; width:50%;  height:auto;}
+  .picture li img:hover { display:block; width:100%;  height:auto;} 
+</style>
+</head>
+
+<body>
+<div data-theme="b">
+	<div data-role="page" id="home">
+		<div data-role="header" data-theme="b">
+			<h1>에꼴(Ecole) 프로젝트</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+				<img src="./img/Logo.svg" width="100%" height="300">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#intro">에꼴 소개</a></li>
+				<li><a href="#project" data-rel="dialog">프로젝트</a></li>
+				<li><a href="#member" data-rel="dialog">멤버</a></li>
+			</ul>
+		</div>
+		<div data-role="footer" data-position="fixed" data-theme="b">
+			<h1>경성대학교</h1>
+		</div>
+	</div>
+	
+	<div data-role="page" id="intro" data-theme="a">
+		<div data-role="header" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>			
+			<h1>에꼴 소개</h1>
+		</div>
+		<div data-role="content" data-theme="d">	
+			<div data-role="collapsible-set" data-theme="e" data-content-theme="e">
+				<div data-role="collapsible" data-collapsed="false">
+					<h3>에꼴 소개</h3>
+					<h2>에꼴프로젝트 강의는 캡스톤디자인과정으로 개설 된 교과목입니다.</h2>
+					<p>본 강의는 프랑스에서 운영중인 소프트웨어 개발 혁신강의로 평가받는 에꼴42(ecole42) 교육과정을 대학 교육과정에 접목하여 운영중인 캡스톤디자인 과목입니다. 단일 교과목 12학점이 편성되어 있고 격주로 수업이 진행되며, 총 8회에 거쳐 과정이 진행됩니다.
+
+						에꼴42(ecole 42)과정의 특징은 교수, 교재, 교육비가 없이 동료학습을 통해 매 주차 목표를 수행하여 최종 프로젝트를 진행하는 형태로 구성되어 있습니다. 이러한 특징을 정규 교과에 반영하기 위해 에꼴캡스톤 과정은 격주 오후 2시에 첫 세션을 시작으로 저녁 세션, 최종 세션을 종료한 후 결과 발표를 진행하고 강의가 종료되는 무박 2일의 해커톤 형태로 진행되며, 각 섹션별로 휴식시간과 석식, 야식이 제공됩니다.
+						
+						각 회차 강의는 3가지 세션으로 나뉘어져 현업중심 강의, 특강, 실습 등으로 진행되며, 4분의 교수님께서 본 과목을 진행합니다. 일반적인 교과과정의 내용을 바탕으로 실무 중심적인 테크닉을 풀어서 세션을 진행하고 현업에서 활동 중인 특강자를 모시고 현장의 이야기를 경험할 수 있는 특별한 과정이기도 합니다.
+						
+						모든 참가학생은 세션에 따른 회차별 과제를 수행하고, 이를 바탕으로 최종 개인 프로젝트까지 진행하도록 프로그램을 구성하였습니다.
+						
+						캡스톤디자인 과정은 학생이 스스로 프로젝트를 구성하고 진행하는데 중점을 둔 교육 과정으로 학생 스스로 성장하는 수업이 될 수 있도록 진행됩니다.</p>
+				</div>
+			</div>
+		</div>
+		<div data-role="footer" data-theme="c">
+			<h1>경성대학교</h1>
+		</div>		
+	</div>
+	
+	
+	<div data-role="page" id="project" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#home" data-icon="arrow-l" data-direction="reverse">처음</a>
+			<h1>프로젝트</h1>
+		</div>
+		<div data-role="content" style="text-align:center">
+			<ul data-role="listview" data-inset="true">
+				<li><a href="#Infra">1주차 / ICT 인프라 구축</a></li>
+				<li><a href="#OpenBasic" data-rel="dialog">2주차 / 오픈소스 Web 기초</a></li>
+				<li><a href="#OpenUse" data-rel="dialog">3주차 / 오픈소스 Web 활용</a></li>
+				<li><a href="#Backend">4주차 / Backend 서비스 구축</a></li>
+				<li><a href="#Deploy">5주차 / ICT 서비스 Deploy</a></li>
+				<li><a href="#Mobile">6주차 / 모바일 서비스 구축</a></li>
+				<li><a href="#Develop">7주차 / ICT 시스템 개발 프로젝트</a></li>
+				<li><a href="#Output">8주차 / 프로젝트 결과 발표</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div data-role="page" id="Infra" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#project" data-icon="arrow-l" data-direction="reverse">이전</a>
+			<h1>ICT 인프라 구축</h1>
+		</div>
+		<div>
+			<img src="./img/IP세팅.jpg" width="100%" >
+			<img src="./img/LVM 세팅.jpg" width="100%" >
+			<img src="./img/OpenSSH 확인.png" width="100%" >
+			<img src="./img/언어 선택.png" width="100%" >
+			<img src="./img/저장공간 확인.jpg" width="100%" >
+			<img src="./img/충돌 에러 화면.PNG" width="100%" >
+			<img src="./img/프로필 생성.png" width="100%" >
+		</div>
+	</div>
+
+	<div data-role="page" id="OpenBasic" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#project" data-icon="arrow-l" data-direction="reverse">이전</a>
+			<h1>오픈소스 Web 기초</h1>
+		</div>
+		<div>
+			<img src="./img/PortfolioSite.png" width="100%" height="1000">
+		</div>
+	</div>
+
+	<div data-role="page" id="OpenUse" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#project" data-icon="arrow-l" data-direction="reverse">이전</a>
+			<h1>오픈소스 Web 활용</h1>
+		</div>
+		<div>
+			<img src="./img/반응형_화면.PNG" width="100%" height="600">
+		</div>
+	</div>
+
+	<div data-role="page" id="Backend" data-theme="b">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#project" data-icon="arrow-l" data-direction="reverse">이전</a>
+			<h1>Backend 서비스 구축</h1>
+		</div>
+		<div align="center">
+			<h2>Login Main Page</h2>
+			<img src="./img/Login_main.PNG" width="100%" height="400">
+			<h2>사용자에게 Email,Password,Name 입력 받아서 계정 생성</h2>
+			<img src="./img/create.PNG" width="100%">
+			<h2>사용자에게 email,password 입력 받아서 로그인</h2>
+			<img src="./img/login.PNG" width="100%">
+		</div>
+	</div>
+
+	<div data-role="page" id="Deploy" data-theme="b" style="width: 100%;">
+		<div data-role="header" data-position="fixed" data-theme="b">
+			<a href="#project" data-icon="arrow-l" data-direction="reverse">이전</a>
+			<h1>ICT 서비스 Deploy</h1>
+		</div>
+		<div align="center">
+			<h2>TypeScript를 이용한 블록체인 클론코딩</h2>
+			<h3>TypeScript와 JavaScript</h3>
+			<ol>
+				<li>1.타입스크립트는 자바스크립트와 다르게 컴파일 언어이다.</li>
+				<li>2.정적 타입 언어여서 컴파일 시간이 걸리지만 안정성이 보장된다.</li>
+				<li>3.반면 자바스크립트는 동적 타입 언어여서 런타임 속도는 빠르지만 안정성이 떨어진다.</li>
+				<li>4.타입스크립트를 컴파일하면 자바스크립트로 변환이 된 후 실행이 된다.</li>
+				<li>5.타입스크립트는 class와 interface의 특징을 지원함으로서 객체지향 프로그래밍 환경을 제공한다.</li>
+			</ol>
+			<h3>TypeScript 프로젝트 생성하는법</h3>
+			<ol>
+				<li>1.프로젝트 폴더를 만든다.</li>
+				<li>2.프로젝트 폴더 안에서 npm init -y 명령어로 package.json을 만든다.</li>
+				<img src="./img/package_json.PNG" width="100%">
+				<li>3.npm install -D typescript 명령어로 devDependencies에 typescript를 설치한다.</li>
+				<li>4.src 폴더 생성 후 작업할 index.ts 파일을 생성한다.</li>
+				<li>5.touch tsconfig.json을 만든다.(이 파일 있으면 vscode에서 내가 typescript로 작업을 하고 있다는걸 알게되면서, 자동완성기능을 제공한다.)</li>
+				<img src="./img/tsconfig_json.PNG" width="100%">
+				<li>6.tsconfig.json파일에 "outDir": "build" 코드를 추가해서 변환될 javascript 파일이 생성될 디렉토리를 지정해준다.</li>
+			</ol>
+			<h3>BlockChain 코드</h3>
+			<img src="./img/Blockchain_1.PNG" width="100%">
+			<img src="./img/Blockchain_2.PNG" width="100%">
+			<img src="./img/Blockchain_3.PNG" width="100%">
+			<h3>BlockChain이 반영된 블록 결과</h3>
+			<img src="./img/Blockchain_4.PNG" width="100%">
+			<h2>BlockChain의 취약점을 노린 코드</h2>
+			<img src="./img/Hacked_code.PNG" width="100%">
+			<p>새로운 블록을 push 할때 this.blocks으로 바로 리턴이 돼서 외부에서 원래 데이터와 관계없는 블록을 생성할 수 있다.</p>
+			<h2>취약점이 노출된 BlockChain의 결과</h2>
+			<img src="./img/Hacked_result.PNG" width="100%">
+			<h3>취약점을 보완한 코드</h3>
+			<img src="./img/supple_code.PNG" width="100%">
+			<p>기존에는 this.blocks로 리턴이 됐지만, 코드를 수정하면서 getBlock 함수의 리턴값을 아예 새로운 블록으로 리턴시킴으로써 관련없는 블록 추가를 막았다.</p>
+			<h2>취약점을 보완한 코드</h2>
+			<img src="./img/supple_result.PNG" width="100%">
+		</div>
+	</div>
+	
+	<div data-role="page" id="member">
+		<div data-role="header">
+			<h1>멤버</h1>
+		</div>
+		<div data-role="content" style="display: flex;">
+			<button onclick="filterSelection('all')" style="display: inline-block; margin-right: 5px;">전체</button>
+    		<button onclick="filterSelection('professor')" style="display: inline-block; margin-right: 5px;">교수</button>
+    		<button onclick="filterSelection('mentor')" style="display: inline-block;">멘토</button>
+			<button onclick="filterSelection('students')" style="display: inline-block; margin-right: 5px;">학생</button>
+		</div>
+
+<div id="myItems">
+	<div class="item professor all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/PF_SJH.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>손정호 교수</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 교수</li>
+                	<li>소속 : LINK3.0</li>
+                	<li>세션 : 에꼴프로젝트, 공유경제플랫폼, 빅데이터플랫폼, 오픈소스플랫폼</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_OJM.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>오정민</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_IDW.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>임대원</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_YJS.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>윤진수</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_OYS.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>오영석</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_SBJ.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>성백준</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_PHS.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>박현수</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_PGH.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>박광훈</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_KMJ.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>김민조</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_KSY.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>김성영</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_LEJ.png" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>이은정</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_LGY.png" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>이가영</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item students all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/ST_KIR.jpg" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>김이레</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 참여학생</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item mentor all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/MET_LGB.png" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>이꽃별</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 멘토</li>
+                	<li>소속 : 굿웹플</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item professor all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/PF_CDH.png" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>최동한</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 초빙교수</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item professor all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/PF_KJH.png" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>김주현</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 초빙교수</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+		<hr>
+	</div>
+	<div class="item professor all">
+    	<div style="display: flex; align-items: flex-start;">
+        	<img src="./img/PF_SNU.png" width="200" height="200" alt="Profile Image" style="display: inline; vertical-align: top;">
+        	<div style="margin-left: 20px;">
+            	<h4>성낙운</h4>
+            	<ul style="list-style-type: none; padding: 0; margin: 0;">
+                	<li>구분 : 초빙교수</li>
+                	<li>소속 : 소프트웨어학과</li>
+                	<li>세션 : 에꼴프로젝트</li>
+            	</ul>
+        	</div>
+    	</div>
+	</div>
+</div>
+
+<script>
+function filterSelection(category) {
+  var x, i;
+  x = document.getElementsByClassName("item");
+  if (category == 'all') category = "";
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  for (i = 0; i < x.length; i++) {
+    if (x[i].className.indexOf(category) > -1) x[i].style.display = "block";
+  }
+}
+
+window.onload = function() {
+  filterSelection('all');
+}
+</script>
+		</div>
+	</div>
+</div>	
+</body>
+</html>
